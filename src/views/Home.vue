@@ -1,18 +1,23 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+  <navbar></navbar>
+  <top-header></top-header>
+  <div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.65);">
+    <como-funziona></como-funziona>
   </div>
+</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Navbar from '@/components/Navbar'
+import TopHeader from '@/components/TopHeader'
+import ComoFunziona from '@/components/ComoFunziona'
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+  name: 'Home',
+  components: { Navbar, TopHeader, ComoFunziona }
 }
 </script>
+
+<style lang="scss">
+</style>
