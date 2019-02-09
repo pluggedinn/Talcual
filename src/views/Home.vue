@@ -2,9 +2,8 @@
 <div>
   <navbar></navbar>
   <top-header></top-header>
-  <div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.65);">
-    <como-funziona></como-funziona>
-  </div>
+  <como-funziona></como-funziona>
+  <dishes></dishes>
 </div>
 </template>
 
@@ -12,10 +11,11 @@
 import Navbar from '@/components/Navbar'
 import TopHeader from '@/components/TopHeader'
 import ComoFunziona from '@/components/ComoFunziona'
+import Dishes from '@/components/Dishes'
 
 export default {
   name: 'Home',
-  components: { Navbar, TopHeader, ComoFunziona }
+  components: { Navbar, TopHeader, ComoFunziona, Dishes }
 }
 </script>
 
