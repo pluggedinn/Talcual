@@ -1,4 +1,4 @@
-# talcual
+# Talcual
 
 ## Project setup
 ```
