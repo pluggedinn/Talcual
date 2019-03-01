@@ -1,29 +1,9 @@
 # Talcual
 
-## Project setup
-```
-npm install
-```
+## Shopify Project setup
+Follow instructions here [Theme Kit](https://shopify.github.io/themekit/).
 
-### Compiles and hot-reloads for development
+## Run dev
 ```
-npm run serve
+theme watch
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
