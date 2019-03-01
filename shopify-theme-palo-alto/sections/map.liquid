@@ -1,0 +1,152 @@
+{% comment %} Section {% endcomment %}
+<div
+{% if section.settings.api_key != blank %}
+  class="map--bg"
+  data-section-type="map" 
+  data-key="{{ section.settings.api_key }}"
+  data-address = "{{ section.settings.map_address }}"
+  data-section-id="{{ section.id }}"
+  data-style="{{ section.settings.style }}"
+  data-zoom="{{ section.settings.zoom }}"
+{% else %}
+  data-bgset="{% include 'bgset', image: block.settings.image %}"
+  data-sizes="auto"
+  data-parent-fit="cover"
+style="
+  {% if section.settings.background_image != blank %}
+  background-image: url('{{ section.settings.background_image | img_url: '2048x'}}');
+  {% else %}
+  background-image: url(' {% include 'placeholder_svg_uri', placeholder : 'lifestyle-2' %}');
+  {% endif %}
+  background-repeat: no-repeat;
+  background-position: center center;"
+  class="lazyload fade-in seven-fifty-height-hero
+  {% if section.settings.background_image == blank %}placeholder-svg-filled{% endif %}"
+{% endif %}
+>
+  {% if section.settings.api_key != blank %}
+    <div class="map--{{section.id}} map"></div>
+  {% endif %}
+
+  {% if section.settings.location_title != blank or section.settings.address != blank %}
+  <div class = "map__info grid--full" style="background-color:{{section.settings.card_color}};">
+    <div class = "grid__item large--one-half medium-down--one-half map__info_title {{section.settings.location_title_size}}">{{ section.settings.location_title }}</div>
+    <div class = "grid__item large--one-half medium-down--one-half map__info_container">{{ section.settings.address }}</div>
+  </div>
+  {% endif %}
+</div>
+
+{% comment %} Schema {% endcomment %}
+{% schema %}
+  {
+    "name": "Map",
+    "class": "map-section",
+    "settings": [
+      {
+        "id": "api_key",
+        "type": "text",
+        "label": "Google Maps API key",
+        "info": "You’ll need to [register a Google Maps API Key](https://help.shopify.com/manual/using-themes/troubleshooting/map-section-api-key) to display the map"
+      },
+      {
+        "type":"text",
+        "id":"map_address",
+        "label":"Map address",
+        "info": "Google Maps will find the exact location",
+        "default": "566 Emerson St, Palo Alto, CA 94301"
+      },
+      {
+        "id": "location_title",
+        "type": "text",
+        "label": "Heading",
+        "default": "Palo Alto"
+      },
+      {
+      "type": "select",
+      "id": "location_title_size",
+      "label": "Heading size",
+      "default": "h2",
+      "options": [
+        {
+          "value": "h1",
+          "label": "Large"
+        },
+        {
+          "value": "h2",
+          "label": "Medium"
+        },
+        {
+          "value": "h4",
+          "label": "Small"
+        }
+        ]
+      },
+      {
+        "id": "address",
+        "type": "text",
+        "label": "Address and hours",
+        "default": "<p>566 Emerson Street<br>Palo Alto, California</p><p>Mon - Fri, 8am - 11pm<br>Saturday, 8am - 12pm<br>Sunday, 9am - 11pm</p>"
+      },
+      {
+        "id": "card_color",
+        "type": "color",
+        "label": "Card color",
+        "default": "#fff"
+      },
+      {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "default": "standard",
+      "options": [
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "silver",
+          "label": "Silver"
+        },
+        {
+          "value": "retro",
+          "label": "Retro"
+        },
+        {
+          "value": "dark",
+          "label": "Dark"
+        },
+        {
+          "value": "night",
+          "label": "Night"
+        },
+        {
+          "value": "aubergine",
+          "label": "Aubergine"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "zoom",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "label": "Zoom",
+      "info":"Low levels cover a wide area, while higher levels cover a smaller area.",
+      "default": 12
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Image",
+      "info": "Displayed if the map isn’t loaded"
+    }
+    ],
+    "presets": [
+      {
+        "name": "Map",
+        "category": "Store information"
+      }
+    ]
+  }
+{% endschema %}

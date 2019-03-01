@@ -1,0 +1,76 @@
+{% comment %}
+  Blank single product state
+{% endcomment %}
+
+{% unless emptyState %}
+  {{ 'theme-onboarding.css' | global_asset_url | stylesheet_tag }}
+  {% assign emptyState = true %}
+{% endunless %}
+
+<div>
+  
+  <!-- Fake Image -->
+  <div class="popup-gallery" >
+    <div class = "product-page-frame frame">
+        <a href="#!" class = "fake-product">
+          {{ 'product-5' | placeholder_svg_tag: 'placeholder-svg' }}
+        </a>
+    </div>
+  </div>
+
+  <!-- Fake Product Text -->
+  <h1 class = "featured-product-title">
+    <a href="#!">{{ 'homepage.onboarding.product_title' | t }}</a>
+  </h1>
+
+  {% if enable_reviews %}
+    <span class="shopify-product-reviews-badge"">
+      <span class="spr-badge" data-rating="0.0">
+        <span class="spr-starrating spr-badge-starrating">
+          <i class="spr-icon spr-icon-star-empty"></i>
+          <i class="spr-icon spr-icon-star-empty"></i>
+          <i class="spr-icon spr-icon-star-empty"></i>
+          <i class="spr-icon spr-icon-star-empty"></i>
+          <i class="spr-icon spr-icon-star-empty"></i>
+        </span>
+      </span>
+    </span>
+  {% endif %}
+
+  <h2 id="ProductPrice" itemprop="price"> 
+    $19.99
+  </h2>
+
+  {% if enable_swatches %}
+    <div class="swatches-fake">
+      <div class="swatch clearfix" data-option-index="0">
+        <div data-value="White" class="swatch-element color white">
+          <label title="White">
+            <span style="background-color: white;"></span>
+          </label>
+        </div>
+        <div data-value="Grey" class="swatch-element color grey">
+          <label title="Grey">
+            <span style="background-color: grey;"></span>
+          </label>
+        </div>
+        <div data-value="Black" class="swatch-element color black">
+          <label title="Black">
+            <span style="background-color: black;"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+ 
+  <div class="product-description rte text-center" itemprop="description">
+  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+  </div>
+
+  <button type="submit" name="add" id="AddToCart" class="btn">
+    <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
+  </button>
+
+</div>
+
+

@@ -1,0 +1,1338 @@
+{
+  "current": {
+    "favicon": "",
+    "color_header_bg": "rgba(0,0,0,0)",
+    "color_nav_home": "#ffffff",
+    "color_nav": "#333333",
+    "color_dropdown_bg": "#fff",
+    "color_dropdown_text": "#666",
+    "color_body_bg": "#ffffff",
+    "color_headings": "#333333",
+    "color_body_text": "#666666",
+    "color_accent": "#f53919",
+    "color_borders_and_lines": "#d3d3d3",
+    "color_footer_bg": "#ffffff",
+    "color_arrows": "#ffffff",
+    "color_featured_product": "#ffffff",
+    "color_featured_content_overlay": "#fafafa",
+    "color_featured_collection": "#ffffff",
+    "featured_blog_background": "#fafafa",
+    "color_product_page": "#fff",
+    "color_collections_header": "#fafafa",
+    "color_collection_page": "#fff",
+    "color_buttons": "#27afc2",
+    "color_buttons_border": "#27afc2",
+    "color_buttons_text": "#ffffff",
+    "type_heading_font": "playfair_display_n7",
+    "heading_text_size": "* 1",
+    "type_body_font": "open_sans_n4",
+    "body_text_size": "* 1",
+    "type_button_font": "open_sans_n4",
+    "button_text_size": "* 1",
+    "button_border_radius": 0,
+    "type_accent_font": "open_sans_n4",
+    "show_body_padding": false,
+    "show_spacer_lines": true,
+    "product_grid_columns": 4,
+    "enable_quick_buy": true,
+    "show_product_grid_buttons": false,
+    "color_swatches": true,
+    "product_grid_slideshow": true,
+    "product_grid_hover_image": false,
+    "product_grid_slideshow_arrows": "black",
+    "grid_image_height_desktop": 245,
+    "grid_image_height_tablet": 245,
+    "grid_image_height_mobile": 245,
+    "enable_payment_button": true,
+    "cart_type": "drawer",
+    "enable_cart_notes": false,
+    "social_share_image": "",
+    "social_facebook_link": "",
+    "social_twitter_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_google_plus_link": "",
+    "enable_blog_sharing": true,
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "share_google_plus": false,
+    "show_multiple_currencies": false,
+    "currency_format": "money_with_currency_format",
+    "supported_currencies": "INR GBP CAD USD AUD EUR JPY",
+    "default_currency": "USD",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
+    "color_top_bar": "#f53919",
+    "show_popup": true,
+    "popup_header": "",
+    "popup_content": "",
+    "show_popup_newsletter": true,
+    "popup_delay": "3000",
+    "popup_reappear_time": "7",
+    "popup_page": "",
+    "color_popup_bg": "#ffffff",
+    "color_header_scroll_bg": "#ffffff",
+    "color_logo": "#666666",
+    "color_menu_item": "#666666",
+    "cart_notes_enable": true,
+    "social_sharing_products": true,
+    "top_bar_text": "",
+    "header_bg_color": "#ffffff",
+    "on_scroll_header_bg_color": "#fff",
+    "logo_use_image": true,
+    "logo_max_width": "30",
+    "show_shop_name": true,
+    "enable_full_header": false,
+    "full_header_nav_color": "#ffffff",
+    "full_header_dd_color": "#ffffff",
+    "full_header_dd_bg": "rgba(0,0,0,0)",
+    "full_header_cart_color": "#780d7d",
+    "color_slider_heading": "#000000",
+    "color_slider_subheading": "#000000",
+    "color_slider_btn_color": "#000000",
+    "color_slider_btn_hover_color": "#ffffff",
+    "color_slider_btn_border": "#0e0e0e",
+    "color_slider_btn_hover_border": "#333",
+    "color_slider_btn_hover_bg": "rgba(0,0,0,0)",
+    "color_hero_heading": "#333",
+    "color_hero_subheading": "#333",
+    "color_hero_btn": "#333",
+    "color_hero_hover_btn": "#333",
+    "color_hero_btn_border": "#333",
+    "color_hero_btn_hover_border": "#333",
+    "color_hero_btn_hover_bg": "#fff",
+    "enable_hero_text": true,
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "header_position": "relative",
+          "logo": "shopify:\/\/shop_images\/logo_white.png",
+          "logo_not_home": "shopify:\/\/shop_images\/logo_white.png",
+          "logo_max_width": 180,
+          "show_shop_name": false,
+          "show_search": false,
+          "menu_searches_list": "",
+          "main-menu": "main-menu"
+        }
+      },
+      "1481560591812": {
+        "type": "featured-image",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/slogan-bg4.jpg",
+          "image_height": "one-hundred-height-hero",
+          "image_position": "bg-pos-left-center",
+          "overlay_opacity": 15,
+          "hero_overlay_color": "#000",
+          "enable_parallax": true,
+          "heading": "PREPÁRATE PARA COMER MEJOR SANO + ORGÁNICO + LOCAL",
+          "subheading": "LO MEJOR DE LA NATURALEZA A TU MESA\nPIDE TAL CUAL",
+          "text_color": "text-light",
+          "btn_text": "",
+          "btn_link": ""
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_gallery": "zoom",
+          "text_alignment": "text-left",
+          "enable_social_sharing_products": true,
+          "enable_vendor": false,
+          "hide_quantity": false,
+          "enable_reviews": true,
+          "reviews_title": "Reviews",
+          "page_tab_1": "",
+          "page_tab_2": "",
+          "page_tab_3": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1484302501308": {
+            "type": "logo",
+            "settings": {
+              "image": "",
+              "logo_width": 100,
+              "show_social_links": true,
+              "show_payment_icons": true
+            }
+          },
+          "1483658473209": {
+            "type": "link",
+            "settings": {
+              "foot-menu": "footer"
+            }
+          },
+          "1483658487462": {
+            "type": "text",
+            "settings": {
+              "footer_text": "<p>Leave your customers with a final message about your brand in this rich text block.<\/p>"
+            }
+          },
+          "1483658478460": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_title": ""
+            }
+          }
+        },
+        "block_order": [
+          "1484302501308",
+          "1483658473209",
+          "1483658487462",
+          "1483658478460"
+        ],
+        "settings": {}
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": "enabled",
+          "popup_width": "medium",
+          "popup_position": "center",
+          "image": "",
+          "overlay_color": "#000",
+          "overlay_opacity": 50,
+          "popup_header": "",
+          "popup_content": "",
+          "text_color": "dark",
+          "show_popup_newsletter": false,
+          "popup_delay": "0",
+          "popup_reappear_time": "0"
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "show_announcement_bar": false,
+          "color_announcement_bar_bg": "#fafafa",
+          "color_announcement_bar_text": "#333"
+        }
+      },
+      "1551059529474": {
+        "type": "icons-row",
+        "blocks": {
+          "1551059529474-0": {
+            "type": "text",
+            "settings": {
+              "icon": "home",
+              "title": "ELIGES",
+              "content": "Elige el número y tipo de recetas que quieres recibir. Nuestro menú cambia cada semana para adaptarse a la cosecha de temporada de nuestros productores."
+            }
+          },
+          "1551059529474-1": {
+            "type": "text",
+            "settings": {
+              "icon": "home",
+              "title": "PREPARAMOS",
+              "content": "Nosotros nos encargamos de seleccionar los ingredientes más frescos y preparar tus recetas diariamente."
+            }
+          },
+          "1551059529474-2": {
+            "type": "text",
+            "settings": {
+              "icon": "home",
+              "title": "ENVIAMOS",
+              "content": "Tu receta viajará en empaques 100% biodegradables hasta llegar a ti lista para que la disfrutes."
+            }
+          }
+        },
+        "block_order": [
+          "1551059529474-0",
+          "1551059529474-1",
+          "1551059529474-2"
+        ],
+        "settings": {
+          "color_icons_bg": "#fafafa",
+          "color_icons_text": "#333"
+        }
+      },
+      "1551059757824": {
+        "type": "featured-product",
+        "settings": {
+          "featured_product": "",
+          "enable_reviews": true,
+          "enable_social_sharing_products": true
+        }
+      },
+      "1551059787145": {
+        "type": "rich-text",
+        "settings": {
+          "text_position": "center",
+          "subheading": "",
+          "heading": "MISIÓN",
+          "text": "<p>&iquest;Alguna vez te has preguntado de d&oacute;nde viene tu comida? Nosotros s&iacute;. Y decidimos averiguarlo y compartirlo contigo.<\/p>\n<p><\/p>\n<p>TalCual nace como un proyecto que busca generar una comunidad donde conectemos a las personas con lo que comen, de d&oacute;nde viene, c&oacute;mo se produce, se prepara y llega hasta ti.<\/p>\n<p><\/p>\n<p>Empezamos buscando a los mejores productores, esos que se dedican a sembrar y cosechar ingredientes sanos, deliciosos y org&aacute;nicos, y los encontramos. No s&oacute;lo los encontramos, nos sentamos a su mesa, viajamos por sus campos y cosechamos de su mano lo mejor de sus tierras. &iquest;Qu&eacute; hicimos despu&eacute;s? Nos llevamos todo eso a la cocina. &iexcl;A experimentar se ha dicho! Y despu&eacute;s de prueba y error (y de comernos todas las pruebas) creamos recetas deliciosas, completas, sanas, de esas que una vez que terminas de comer te sientes feliz y satisfecho. Ahora lo llevamos hasta ti para permitirte ser parte del proceso. Queremos que seas parte de esto, que sepas de d&oacute;nde viene tu comida, que llegue a ti de la forma m&aacute;s sencilla y que la disfrutes siempre. Eso somos, eso queremos. Tal cual.<\/p>",
+          "button_text": "",
+          "button_url": "",
+          "color_text": "#333333",
+          "color_bg": "#f5f5f5"
+        }
+      },
+      "1551059854663": {
+        "type": "instagram",
+        "settings": {
+          "instagram_access_token": "",
+          "rows": 2,
+          "section_title": ""
+        }
+      },
+      "1551059878644": {
+        "type": "icons-row",
+        "blocks": {
+          "1551059878644-0": {
+            "type": "text",
+            "settings": {
+              "icon": "home",
+              "title": "ORGÁNICO",
+              "content": "Adiós a los químicos, las hormonas, los alimentos procesados y los conservadores, porque la verdad es que ya nadie quiere eso en su comida. Hola a los ingredientes orgánicos, las recetas preparadas en casa y a una alimentación más sana y nutritiva."
+            }
+          },
+          "1551059878644-1": {
+            "type": "text",
+            "settings": {
+              "icon": "home",
+              "title": "LOCAL",
+              "content": "Hemos encontrado a los mejores productores de la región, quienes cosechan en el momento ideal para obtener las mejores propiedades de sus productos. México es tierra muy fértil y no es necesario ir más allá de unos kilómetros a la redonda de nuestra ciudad para encontrar lo mejor de la tierra."
+            }
+          },
+          "1551059878644-2": {
+            "type": "text",
+            "settings": {
+              "icon": "home",
+              "title": "CONSCIENTE",
+              "content": "Buscamos apoyar la economía local y a los pequeños productores. Nos preocupamos por el medio ambiente usando empaques 100% biodegradables, te ofrecemos transparencia sobre los ingredientes que usamos y buscamos nuevas opciones para evitar los desechos."
+            }
+          },
+          "1551059990866": {
+            "type": "text",
+            "settings": {
+              "icon": "home",
+              "title": "DELICIOSO",
+              "content": "Nos hemos inspirado en la cocina mediterránea con recetas semanales preparadas día a día con los mejores ingredientes, cariño incluido (que es el más importante). Únicamente usamos productos de temporada, lo que te garantiza el mejor sabor, compruébalo."
+            }
+          }
+        },
+        "block_order": [
+          "1551059878644-0",
+          "1551059878644-1",
+          "1551059878644-2",
+          "1551059990866"
+        ],
+        "settings": {
+          "color_icons_bg": "#fafafa",
+          "color_icons_text": "#333"
+        }
+      },
+      "password-template": {
+        "type": "password-template",
+        "settings": {
+          "show_shop_name": false,
+          "logo": "shopify:\/\/shop_images\/logo_white.png",
+          "logo_max_width": 275,
+          "background_image": "",
+          "text": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "1481560591812",
+      "1551059529474",
+      "1551059757824",
+      "1551059787145",
+      "1551059854663",
+      "1551059878644"
+    ]
+  },
+  "presets": {
+    "Palo Alto": {
+      "favicon": "",
+      "color_header_bg": "rgba(0,0,0,0)",
+      "color_nav_home": "#ffffff",
+      "color_nav": "#333333",
+      "color_dropdown_bg": "#fff",
+      "color_dropdown_text": "#666",
+      "color_body_bg": "#ffffff",
+      "color_headings": "#333333",
+      "color_body_text": "#666666",
+      "color_accent": "#f53919",
+      "color_borders_and_lines": "#d3d3d3",
+      "color_footer_bg": "#ffffff",
+      "color_arrows": "#ffffff",
+      "color_featured_product": "#ffffff",
+      "color_featured_content_overlay": "#fafafa",
+      "color_featured_collection": "#ffffff",
+      "featured_blog_background": "#fafafa",
+      "color_product_page": "#fff",
+      "color_collections_header": "#fafafa",
+      "color_collection_page": "#fff",
+      "color_buttons": "#27afc2",
+      "color_buttons_border": "#27afc2",
+      "color_buttons_text": "#ffffff",
+      "color_top_bar": "#f53919",
+      "type_heading_font": "playfair_display_n7",
+      "heading_text_size": "* 1",
+      "type_body_font": "open_sans_n4",
+      "body_text_size": "* 1",
+      "type_button_font": "open_sans_n4",
+      "button_text_size": "* 1",
+      "type_accent_font": "open_sans_n4",
+      "show_popup": true,
+      "popup_header": "",
+      "popup_content": "",
+      "show_popup_newsletter": true,
+      "popup_delay": "3000",
+      "popup_reappear_time": "7",
+      "show_body_padding": false,
+      "show_spacer_lines": true,
+      "product_grid_columns": 4,
+      "enable_quick_buy": true,
+      "show_product_grid_buttons": false,
+      "grid_image_height_desktop": 245,
+      "grid_image_height_tablet": 245,
+      "grid_image_height_mobile": 245,
+      "cart_type": "drawer",
+      "enable_cart_notes": false,
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_google_plus_link": "",
+      "enable_blog_sharing": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "share_google_plus": true,
+      "show_multiple_currencies": false,
+      "currency_format": "money_with_currency_format",
+      "supported_currencies": "INR GBP CAD USD AUD EUR JPY",
+      "default_currency": "USD",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#1990c6",
+      "checkout_error_color": "#ff6d6d",
+      "popup_page": "",
+      "color_popup_bg": "#ffffff",
+      "color_header_scroll_bg": "#ffffff",
+      "color_logo": "#666666",
+      "color_menu_item": "#666666",
+      "cart_notes_enable": true,
+      "social_sharing_products": true,
+      "top_bar_text": "",
+      "header_bg_color": "#ffffff",
+      "on_scroll_header_bg_color": "#fff",
+      "logo_use_image": true,
+      "logo_max_width": "30",
+      "show_shop_name": true,
+      "enable_full_header": false,
+      "full_header_nav_color": "#ffffff",
+      "full_header_dd_color": "#ffffff",
+      "full_header_dd_bg": "rgba(0,0,0,0)",
+      "full_header_cart_color": "#780d7d",
+      "color_slider_heading": "#000000",
+      "color_slider_subheading": "#000000",
+      "color_slider_btn_color": "#000000",
+      "color_slider_btn_hover_color": "#ffffff",
+      "color_slider_btn_border": "#0e0e0e",
+      "color_slider_btn_hover_border": "#333",
+      "color_slider_btn_hover_bg": "rgba(0,0,0,0)",
+      "color_hero_heading": "#333",
+      "color_hero_subheading": "#333",
+      "color_hero_btn": "#333",
+      "color_hero_hover_btn": "#333",
+      "color_hero_btn_border": "#333",
+      "color_hero_btn_hover_border": "#333",
+      "color_hero_btn_hover_bg": "#fff",
+      "enable_hero_text": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "header_position": "relative",
+            "logo": "",
+            "logo_not_home": "",
+            "logo_max_width": 100,
+            "show_shop_name": true,
+            "main-menu": "main-menu"
+          }
+        },
+        "1481560407052": {
+          "type": "slideshow",
+          "blocks": {
+            "1481560407052-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "bg_position": "bg-pos-center-center",
+                "slide_heading": "Welcome to Palo Alto",
+                "slide_subheading": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+                "slide_btn_text": "Welcome",
+                "slide_btn_link": "",
+                "video_btn_text": "Watch the Video",
+                "video_btn_link": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                "hero_overlay_color": "#000",
+                "overlay_opacity": 30
+              }
+            },
+            "1486493533406": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "bg_position": "bg-pos-center-center",
+                "slide_heading": "Welcome to Palo Alto",
+                "slide_subheading": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+                "slide_btn_text": "Welcome",
+                "slide_btn_link": "",
+                "video_btn_text": "Watch the Video",
+                "video_btn_link": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                "hero_overlay_color": "#000",
+                "overlay_opacity": 30
+              }
+            }
+          },
+          "block_order": [
+            "1481560407052-0",
+            "1486493533406"
+          ],
+          "settings": {
+            "duration": 4,
+            "slide_height": "one-hundred-height-hero"
+          }
+        },
+        "1481560539835": {
+          "type": "featured-collection",
+          "settings": {
+            "featured_collection": "",
+            "show_title": false
+          }
+        },
+        "1481560591812": {
+          "type": "featured-image",
+          "settings": {
+            "image": "",
+            "image_height": "one-hundred-height-hero",
+            "image_position": "bg-pos-center-center",
+            "overlay_opacity": 30,
+            "hero_overlay_color": "#000",
+            "enable_parallax": true,
+            "heading": "Welcome to Palo Alto",
+            "subheading": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+            "text_color": "text-light",
+            "btn_text": "",
+            "btn_link": ""
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "text_alignment": "text-left",
+            "enable_social_sharing_products": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1484302501308": {
+              "type": "logo",
+              "settings": {
+                "image": "",
+                "logo_width": 100,
+                "show_social_links": true,
+                "show_payment_icons": true
+              }
+            },
+            "1483658473209": {
+              "type": "link",
+              "settings": {
+                "foot-menu": "footer"
+              }
+            },
+            "1483658487462": {
+              "type": "text",
+              "settings": {
+                "footer_text": "<p>Leave your customers with a final message about your brand in this rich text block.<\/p>"
+              }
+            },
+            "1483658478460": {
+              "type": "newsletter",
+              "settings": {
+                "newsletter_title": ""
+              }
+            }
+          },
+          "block_order": [
+            "1484302501308",
+            "1483658473209",
+            "1483658487462",
+            "1483658478460"
+          ],
+          "settings": {}
+        },
+        "1485047765110": {
+          "type": "instagram",
+          "settings": {
+            "instagram_access_token": "",
+            "rows": 2,
+            "section_title": ""
+          }
+        },
+        "1486493646871": {
+          "type": "product-features",
+          "blocks": {
+            "1486493646871-0": {
+              "type": "text",
+              "settings": {
+                "image_1": "",
+                "image_link_1": "",
+                "image_2": "",
+                "image_link_2": "",
+                "button_text": "",
+                "button_link": "",
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "1486493646871-0"
+          ],
+          "settings": {}
+        },
+        "1486493673588": {
+          "type": "featured-collection",
+          "settings": {
+            "featured_collection": "",
+            "show_title": false
+          }
+        },
+        "1518426157559": {
+          "type": "map",
+          "settings": {
+            "api_key": "",
+            "map_address": "566 Emerson St, Palo Alto, CA 94301",
+            "location_title": "Palo Alto",
+            "location_title_size": "h2",
+            "address": "<p>566 Emerson Street<br>Palo Alto, California<\/p><p>Mon - Fri, 8am - 11pm<br>Saturday, 8am - 12pm<br>Sunday, 9am - 11pm<\/p>",
+            "card_color": "#fff",
+            "style": "standard",
+            "zoom": 12
+          }
+        },
+        "1518426196028": {
+          "type": "blog-posts",
+          "settings": {
+            "blogName": "",
+            "title": "Our Blog"
+          }
+        }
+      },
+      "content_for_index": [
+        "1481560407052",
+        "1486493646871",
+        "1481560539835",
+        "1481560591812",
+        "1486493673588",
+        "1518426196028",
+        "1518426157559",
+        "1485047765110"
+      ]
+    },
+    "Stanford": {
+      "favicon": "",
+      "color_header_bg": "rgba(0,0,0,0)",
+      "color_nav_home": "#ffffff",
+      "color_nav": "#333333",
+      "color_dropdown_bg": "#fff",
+      "color_dropdown_text": "#666",
+      "color_body_bg": "#ffffff",
+      "color_headings": "#333333",
+      "color_body_text": "#333333",
+      "color_accent": "#f3a293",
+      "color_borders_and_lines": "#f3a293",
+      "color_footer_bg": "#ffffff",
+      "color_arrows": "#ffffff",
+      "color_featured_product": "#ffffff",
+      "color_featured_content_overlay": "#fafafa",
+      "color_featured_collection": "#ffffff",
+      "featured_blog_background": "#fafafa",
+      "color_product_page": "#ffffff",
+      "color_collections_header": "#fafafa",
+      "color_collection_page": "#ffffff",
+      "color_buttons": "#ffffff",
+      "color_buttons_border": "#f4cf78",
+      "color_buttons_text": "#000000",
+      "color_top_bar": "#3366a7",
+      "type_heading_font": "inconsolata_n4",
+      "heading_text_size": "* 1",
+      "type_body_font": "open_sans_n3",
+      "body_text_size": "* 1",
+      "type_button_font": "inconsolata_n4",
+      "button_text_size": "* 1",
+      "type_accent_font": "inconsolata_n4",
+      "show_popup": true,
+      "popup_header": "",
+      "popup_content": "",
+      "show_popup_newsletter": true,
+      "popup_delay": "3000",
+      "popup_reappear_time": "7",
+      "show_body_padding": false,
+      "show_spacer_lines": true,
+      "product_grid_columns": 3,
+      "enable_quick_buy": true,
+      "show_product_grid_buttons": false,
+      "grid_image_height_desktop": 350,
+      "grid_image_height_tablet": 245,
+      "grid_image_height_mobile": 245,
+      "cart_type": "drawer",
+      "enable_cart_notes": false,
+      "social_facebook_link": "#!",
+      "social_twitter_link": "#!",
+      "social_pinterest_link": "#!",
+      "social_instagram_link": "#!",
+      "social_google_plus_link": "#!",
+      "enable_blog_sharing": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "share_google_plus": true,
+      "show_multiple_currencies": false,
+      "currency_format": "money_with_currency_format",
+      "supported_currencies": "INR GBP CAD USD AUD EUR JPY",
+      "default_currency": "USD",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#1990c6",
+      "checkout_error_color": "#ff6d6d",
+      "popup_page": "",
+      "color_popup_bg": "#ffffff",
+      "color_header_scroll_bg": "#ffffff",
+      "color_logo": "#666666",
+      "color_menu_item": "#666666",
+      "cart_notes_enable": true,
+      "social_sharing_products": true,
+      "top_bar_text": "",
+      "header_bg_color": "#ffffff",
+      "on_scroll_header_bg_color": "#fff",
+      "logo_use_image": true,
+      "logo_max_width": "30",
+      "show_shop_name": true,
+      "enable_full_header": false,
+      "full_header_nav_color": "#ffffff",
+      "full_header_dd_color": "#ffffff",
+      "full_header_dd_bg": "rgba(0,0,0,0)",
+      "full_header_cart_color": "#780d7d",
+      "color_slider_heading": "#000000",
+      "color_slider_subheading": "#000000",
+      "color_slider_btn_color": "#000000",
+      "color_slider_btn_hover_color": "#ffffff",
+      "color_slider_btn_border": "#0e0e0e",
+      "color_slider_btn_hover_border": "#333",
+      "color_slider_btn_hover_bg": "rgba(0,0,0,0)",
+      "color_hero_heading": "#333",
+      "color_hero_subheading": "#333",
+      "color_hero_btn": "#333",
+      "color_hero_hover_btn": "#333",
+      "color_hero_btn_border": "#333",
+      "color_hero_btn_hover_border": "#333",
+      "color_hero_btn_hover_bg": "#fff",
+      "enable_hero_text": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "header_position": "relative",
+            "logo": "",
+            "logo_not_home": "",
+            "logo_max_width": 50,
+            "show_shop_name": false,
+            "main-menu": "main-menu"
+          }
+        },
+        "1481560539835": {
+          "type": "featured-collection",
+          "settings": {
+            "featured_collection": "",
+            "show_title": false
+          }
+        },
+        "1481560591812": {
+          "type": "featured-image",
+          "settings": {
+            "image": "",
+            "image_height": "one-hundred-height-hero",
+            "image_position": "bg-pos-center-center",
+            "overlay_opacity": 30,
+            "hero_overlay_color": "#000000",
+            "enable_parallax": true,
+            "heading": "Welcome to Palo Alto",
+            "subheading": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+            "text_color": "text-light",
+            "btn_text": "Welcome",
+            "btn_link": ""
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "text_alignment": "text-left",
+            "enable_social_sharing_products": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1484302501308": {
+              "type": "logo",
+              "settings": {
+                "image": "",
+                "logo_width": 100,
+                "show_social_links": true,
+                "show_payment_icons": true
+              }
+            },
+            "1483658473209": {
+              "type": "link",
+              "settings": {
+                "foot-menu": "footer"
+              }
+            },
+            "1485048110502": {
+              "type": "blog",
+              "settings": {
+                "blog_widget_select": "news"
+              }
+            },
+            "1483658478460": {
+              "type": "newsletter",
+              "settings": {
+                "newsletter_title": ""
+              }
+            }
+          },
+          "block_order": [
+            "1484302501308",
+            "1483658473209",
+            "1485048110502",
+            "1483658478460"
+          ],
+          "settings": {}
+        },
+        "1483661696223": {
+          "type": "product-features",
+          "blocks": {
+            "1483661696223-0": {
+              "type": "text",
+              "settings": {
+                "image_1": "",
+                "image_link_1": "",
+                "image_2": "",
+                "image_link_2": "",
+                "button_text": "",
+                "button_link": "",
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.<\/p>"
+              }
+            },
+            "1486550657979": {
+              "type": "text",
+              "settings": {
+                "image_1": "",
+                "image_link_1": "",
+                "image_2": "",
+                "image_link_2": "",
+                "button_text": "",
+                "button_link": "",
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "1483661696223-0",
+            "1486550657979"
+          ],
+          "settings": {}
+        },
+        "1485048081735": {
+          "type": "testimonials",
+          "blocks": {
+            "1485048081735-0": {
+              "type": "testimonial",
+              "settings": {
+                "testimonial_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum.<\/p>",
+                "image": "",
+                "customer_name": ""
+              }
+            },
+            "1485048081735-1": {
+              "type": "testimonial",
+              "settings": {
+                "testimonial_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum.<\/p>",
+                "image": "",
+                "customer_name": ""
+              }
+            },
+            "1485048081735-2": {
+              "type": "testimonial",
+              "settings": {
+                "testimonial_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum.<\/p>",
+                "image": "",
+                "customer_name": ""
+              }
+            }
+          },
+          "block_order": [
+            "1485048081735-0",
+            "1485048081735-1",
+            "1485048081735-2"
+          ],
+          "settings": {
+            "title": "Testimonials",
+            "show_quotes": true
+          }
+        },
+        "1485048090834": {
+          "type": "instagram",
+          "settings": {
+            "instagram_access_token": "",
+            "rows": 2,
+            "section_title": "Instagram"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "enable_collection_sorting": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "show_share_buttons": true
+          }
+        },
+        "1491910513645": {
+          "type": "featured-image",
+          "settings": {
+            "image": "",
+            "image_height": "one-hundred-height-hero",
+            "image_position": "bg-pos-left-center",
+            "overlay_opacity": 30,
+            "hero_overlay_color": "#ffb9b9",
+            "enable_parallax": true,
+            "heading": "Welcome to Palo Alto",
+            "subheading": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+            "text_color": "text-light",
+            "btn_text": "",
+            "btn_link": ""
+          }
+        },
+        "1518427330429": {
+          "type": "collection-list",
+          "blocks": {
+            "1518427330429-0": {
+              "type": "featured_collection",
+              "settings": {
+                "collection": ""
+              }
+            },
+            "1518427330429-1": {
+              "type": "featured_collection",
+              "settings": {
+                "collection": ""
+              }
+            },
+            "1518427330429-2": {
+              "type": "featured_collection",
+              "settings": {
+                "collection": ""
+              }
+            }
+          },
+          "block_order": [
+            "1518427330429-0",
+            "1518427330429-1",
+            "1518427330429-2"
+          ],
+          "settings": {
+            "title": "Collection list"
+          }
+        },
+        "1518427339831": {
+          "type": "blog-posts",
+          "settings": {
+            "blogName": "",
+            "title": "Our Blog"
+          }
+        }
+      },
+      "content_for_index": [
+        "1481560591812",
+        "1483661696223",
+        "1491910513645",
+        "1518427330429",
+        "1481560539835",
+        "1485048081735",
+        "1518427339831",
+        "1485048090834"
+      ]
+    },
+    "SoMa": {
+      "favicon": "",
+      "color_header_bg": "rgba(0,0,0,0)",
+      "color_nav_home": "#ffffff",
+      "color_nav": "#333333",
+      "color_dropdown_bg": "#fff",
+      "color_dropdown_text": "#666",
+      "color_body_bg": "#ffffff",
+      "color_headings": "#333333",
+      "color_body_text": "#333333",
+      "color_accent": "#333333",
+      "color_borders_and_lines": "#d3d3d3",
+      "color_footer_bg": "#ffffff",
+      "color_arrows": "#ffffff",
+      "color_featured_product": "#ffffff",
+      "color_featured_content_overlay": "#d6d6d6",
+      "color_featured_collection": "#ffffff",
+      "featured_blog_background": "#fafafa",
+      "color_product_page": "#ffffff",
+      "color_collections_header": "#ffffff",
+      "color_collection_page": "#ffffff",
+      "color_buttons": "#333333",
+      "color_buttons_border": "#ffffff",
+      "color_buttons_text": "#ffffff",
+      "type_heading_font": "roboto_condensed_n4",
+      "heading_text_size": "* 1",
+      "type_body_font": "roboto_n4",
+      "body_text_size": "* 1",
+      "type_button_font": "open_sans_n4",
+      "button_text_size": "* 1",
+      "type_accent_font": "open_sans_n4",
+      "show_popup": false,
+      "popup_header": "",
+      "popup_content": "",
+      "show_popup_newsletter": true,
+      "popup_delay": "3000",
+      "popup_reappear_time": "7",
+      "show_body_padding": false,
+      "show_spacer_lines": true,
+      "product_grid_columns": 3,
+      "enable_quick_buy": true,
+      "show_product_grid_buttons": true,
+      "grid_image_height_desktop": 245,
+      "grid_image_height_tablet": 245,
+      "grid_image_height_mobile": 245,
+      "cart_type": "drawer",
+      "enable_cart_notes": false,
+      "social_facebook_link": "#!",
+      "social_twitter_link": "#!",
+      "social_pinterest_link": "#!",
+      "social_instagram_link": "#!",
+      "social_google_plus_link": "#!",
+      "enable_blog_sharing": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "share_google_plus": true,
+      "show_multiple_currencies": false,
+      "currency_format": "money_with_currency_format",
+      "supported_currencies": "INR GBP CAD USD AUD EUR JPY",
+      "default_currency": "USD",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#1990c6",
+      "checkout_error_color": "#ff6d6d",
+      "color_top_bar": "#fdffed",
+      "popup_page": "",
+      "color_popup_bg": "#ffffff",
+      "color_header_scroll_bg": "#e4f1f7",
+      "color_logo": "#666666",
+      "color_menu_item": "#666666",
+      "cart_notes_enable": true,
+      "social_sharing_products": true,
+      "top_bar_text": "",
+      "header_bg_color": "#ffffff",
+      "on_scroll_header_bg_color": "#fff",
+      "logo_use_image": true,
+      "logo_max_width": "30",
+      "show_shop_name": true,
+      "enable_full_header": false,
+      "full_header_nav_color": "#ffffff",
+      "full_header_dd_color": "#ffffff",
+      "full_header_dd_bg": "rgba(0,0,0,0)",
+      "full_header_cart_color": "#780d7d",
+      "color_slider_heading": "#000000",
+      "color_slider_subheading": "#000000",
+      "color_slider_btn_color": "#000000",
+      "color_slider_btn_hover_color": "#ffffff",
+      "color_slider_btn_border": "#0e0e0e",
+      "color_slider_btn_hover_border": "#333",
+      "color_slider_btn_hover_bg": "rgba(0,0,0,0)",
+      "color_hero_heading": "#333",
+      "color_hero_subheading": "#333",
+      "color_hero_btn": "#333",
+      "color_hero_hover_btn": "#333",
+      "color_hero_btn_border": "#333",
+      "color_hero_btn_hover_border": "#333",
+      "color_hero_btn_hover_bg": "#fff",
+      "enable_hero_text": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "header_position": "relative",
+            "logo": "",
+            "logo_not_home": "",
+            "logo_max_width": 100,
+            "show_shop_name": true,
+            "main-menu": "main-menu"
+          }
+        },
+        "1481560443870": {
+          "type": "featured-product",
+          "settings": {
+            "featured_product": "",
+            "enable_social_sharing_products": true
+          }
+        },
+        "1481560591812": {
+          "type": "featured-image",
+          "settings": {
+            "image": "",
+            "image_height": "original-height",
+            "image_position": "bg-pos-top-center",
+            "overlay_opacity": 30,
+            "hero_overlay_color": "#000",
+            "enable_parallax": true,
+            "heading": "",
+            "subheading": "",
+            "text_color": "text-light",
+            "btn_text": "",
+            "btn_link": ""
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "text_alignment": "text-left",
+            "enable_social_sharing_products": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1484302501308": {
+              "type": "logo",
+              "settings": {
+                "image": "",
+                "logo_width": 100,
+                "show_social_links": true,
+                "show_payment_icons": true
+              }
+            },
+            "1483658473209": {
+              "type": "link",
+              "settings": {
+                "foot-menu": "footer"
+              }
+            },
+            "1486536434834": {
+              "type": "link",
+              "settings": {
+                "foot-menu": "footer"
+              }
+            },
+            "1485048386053": {
+              "type": "blog",
+              "settings": {
+                "blog_widget_select": "news"
+              }
+            }
+          },
+          "block_order": [
+            "1484302501308",
+            "1483658473209",
+            "1486536434834",
+            "1485048386053"
+          ],
+          "settings": {}
+        },
+        "1483662260031": {
+          "type": "product-features",
+          "blocks": {
+            "1483662260031-0": {
+              "type": "text",
+              "settings": {
+                "image_1": "",
+                "image_link_1": "",
+                "image_2": "",
+                "image_link_2": "",
+                "button_text": "",
+                "button_link": "",
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.<\/p>"
+              }
+            },
+            "1486536305934": {
+              "type": "text",
+              "settings": {
+                "image_1": "",
+                "image_link_1": "",
+                "image_2": "",
+                "image_link_2": "",
+                "button_text": "",
+                "button_link": "",
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "1483662260031-0",
+            "1486536305934"
+          ],
+          "settings": {}
+        },
+        "1486536322807": {
+          "type": "testimonials",
+          "blocks": {
+            "1486536322807-0": {
+              "type": "testimonial",
+              "settings": {
+                "testimonial_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum.<\/p>",
+                "image": "",
+                "customer_name": "Sherlock Holmes"
+              }
+            },
+            "1486536322807-1": {
+              "type": "testimonial",
+              "settings": {
+                "testimonial_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum.<\/p>",
+                "image": "",
+                "customer_name": "John Watson"
+              }
+            },
+            "1486536322807-2": {
+              "type": "testimonial",
+              "settings": {
+                "testimonial_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum.<\/p>",
+                "image": "",
+                "customer_name": "Mycroft Holmes"
+              }
+            }
+          },
+          "block_order": [
+            "1486536322807-0",
+            "1486536322807-1",
+            "1486536322807-2"
+          ],
+          "settings": {
+            "title": "Testimonials",
+            "show_quotes": true
+          }
+        },
+        "1486536331175": {
+          "type": "instagram",
+          "settings": {
+            "instagram_access_token": "",
+            "rows": 2,
+            "section_title": "Instagram"
+          }
+        },
+        "1492020868852": {
+          "type": "featured-image",
+          "settings": {
+            "image": "",
+            "image_height": "original-height",
+            "image_position": "bg-pos-center-center",
+            "overlay_opacity": 30,
+            "hero_overlay_color": "#000",
+            "enable_parallax": true,
+            "heading": "",
+            "subheading": "",
+            "text_color": "text-light",
+            "btn_text": "",
+            "btn_link": ""
+          }
+        },
+        "1518426892560": {
+          "type": "blog-posts",
+          "settings": {
+            "blogName": "",
+            "title": "Our Blog"
+          }
+        },
+        "1526436939090": {
+          "type": "video",
+          "settings": {
+            "text_position": "center-center",
+            "text_color": "text-light",
+            "title": "Welcome to Palo Alto",
+            "main_subheading": "This subheading helps you provide some more detail to the title above.",
+            "btn_text": "Welcome",
+            "btn_link": "",
+            "hero_video_link": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_height": "one-hundred-height-hero",
+            "overlay_opacity": 30,
+            "hero_overlay_color": "#000",
+            "image": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "1526436939090",
+        "1483662260031",
+        "1481560591812",
+        "1481560443870",
+        "1486536322807",
+        "1492020868852",
+        "1518426892560",
+        "1486536331175"
+      ]
+    }
+  }
+}

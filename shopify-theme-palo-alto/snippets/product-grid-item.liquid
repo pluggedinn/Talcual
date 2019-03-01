@@ -1,0 +1,135 @@
+<!-- /snippets/product-grid-item.liquid -->
+{% include 'grid-logic' %}
+
+{% assign tag = false %}
+{% if product.available %}
+  {% assign sold_out = false %}
+{% else %}
+  {% assign sold_out = true %}
+  {% assign tag = true %}
+{% endif %}
+
+
+{% if product.compare_at_price_min > product.price_min %}
+  {% if sold_out %}
+    {% assign on_sale = false %}
+  {% else %}
+    {% assign on_sale = true %}
+    {% assign tag = true %}
+  {% endif %}
+{% else %}
+  {% assign on_sale = false %}
+{% endif %}
+
+<div class="grid__item text-center {{ grid_item_width }} {% if tag == true %}has-tag{% endif %} {% if enable_carousel %}featured-collection__item{% endif %} product-item-parent" data-slideshow="{{ enable_slideshow }}" data-product-id="{{ product.id }}">
+  <!-- Image -->
+  {% if settings.enable_quick_buy %}
+    <div class="grid__image" >
+  {% else %}
+    <a href="{{product.url}}" class="grid__image">
+  {% endif %}
+    <!-- Tags -->
+    {% if on_sale %}
+      <div class="tag"><span>{{ 'products.product.on_sale_html' | t }}</span></div>
+    {% endif %}
+    {% if sold_out %}
+      <div class="tag"><span>{{ 'products.product.sold_out_html' | t }}</span></div>
+    {% endif %}
+
+    <div class="table">
+        {%- assign image = product.featured_image -%}
+        {%- assign image_widths = '295,394,590,700,800,1000,1200,1500,1800,2000,2400' -%}
+        {% include 'theme-rias' %}
+        <div class="cell">
+          <div
+            {% if settings.enable_quick_buy %}onclick="window.location='{{ product.url }}'"{% endif %}
+            class="lazyload fade-in product-image product-image--featured"
+            data-bgset="{% include 'bgset', image: image %}"
+            data-widths= "[{{ image_widths }}]"
+            data-aspectratio="{{image.aspect_ratio }}"
+            data-sizes="auto"
+            data-parent-fit="contain">
+          </div>
+          <span class="loader"></span>
+
+          {% if product_grid_slideshow and product.images.size > 2 %}
+            <div class="product-image__slider product-image__slider--arrows-{{ product_grid_slideshow_arrows }}">
+              {% for image in product.images %}
+                {% if image != product.featured_image %}
+                  <div class="product-image__slide">
+                    <div
+                      {% if settings.enable_quick_buy %}onclick="window.location='{{ product.url }}'"{% endif %}
+                      class="lazyload fade-in product-image"
+                      data-bgset="{% include 'bgset', image: image %}"
+                      data-widths= "[{{ image_widths }}]"
+                      data-aspectratio="{{image.aspect_ratio }}"
+                      data-sizes="auto"
+                      data-parent-fit="contain">
+                    </div>
+                    <span class="loader"></span>
+                  </div>
+                {% endif%}
+              {% endfor %}
+            </div>
+          {% else %}
+            {%- if product.images[1] != blank and settings.product_grid_hover_image -%}
+              <div class="product-image--hover">
+                <span class="product-image--hover-img lazyload fade-in" data-bgset="{% include 'bgset', image: product.images[1] %}" data-sizes="auto"></span>
+                <span class="loader"></span>
+              </div>
+            {%- endif -%}
+          {% endif %}
+          
+          <noscript>
+            <div class="product-image" style="background-image: url('{{ image | img_url: '600x' }}')"></div>
+
+            {%- if product.images[1] != blank and settings.product_grid_hover_image -%}
+              <div class="product-image--hover">
+                <span class="product-image--hover-img" data-bgset="{% include 'bgset', image: product.images[1] %}" data-sizes="auto"></span>
+              </div>
+            {%- endif -%}
+          </noscript> 
+        </div>
+        {% if settings.enable_quick_buy %}
+          <div class="btn-wrapper">
+            <a href="{{ product.url | within: collection }}" class="btn btn--quick-buy quick_buy_button">{{ 'products.general.quick_buy' | t }}</a>
+          </div>
+        {% endif %}
+    </div>
+    {% if settings.enable_quick_buy %}
+      </div>
+    {% else %}
+      </a>
+    {% endif %}
+
+  <!-- Title -->
+  <a class = "product-grid-item__title" href="{{ product.url | within: collection }}">{{ product.title }}</a>
+  
+  {% if enable_reviews %}
+    <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+  {% endif %}
+
+  <a href="{{ product.url | within: collection }}">
+    <!-- Price -->
+    <p class="price">
+      {% if on_sale == true %}
+        {{ product.price | money }}
+        <span class="reduced-price"><s>{{ product.compare_at_price | money }}</s></span>
+      {% elsif product.price_varies %}
+        {{ product.price_min | money }} - {{ product.price_max | money }}
+      {% else %}
+        {{ product.price | money }}
+      {% endif %}
+    </p>
+  </a>
+
+  {% if enable_swatches %}
+    <div class="swatches-fake">
+      {% include 'swatch' with 'Color' %}
+    </div>
+  {% endif %}
+
+  {% if settings.show_product_grid_buttons %}
+  <a class="btn" href="{{ product.url | within: collection }}">{{ 'products.product.view_item' | t }}</a>
+  {% endif %}
+</div>

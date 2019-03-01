@@ -10,7 +10,7 @@
     </div>
   </div>
   <slick
-    ref="slick"
+    ref="dishes"
     :options="slickOptionsLg">
     <div class="element text-center">
       <img src="../assets/images/p1.png">
@@ -79,7 +79,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .content h5 {
   font-weight: bold;
 }
@@ -87,7 +87,7 @@ export default {
   margin: 0 auto;
   margin-bottom: 60px;
   width: 90%;
-  border: 1px solid black;
+  // border: 1px solid black;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }

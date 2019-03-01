@@ -1,0 +1,208 @@
+<style>
+.site-header__logo img { width: {{ section.settings.logo_max_width | append:'px' }} };
+</style>
+
+
+{% if settings.color_header_bg == "rgba(0,0,0,0)" and settings.color_nav_home == "#ffffff" and section.settings.header_position == "fixed" %}
+{% assign colorFix = "color-fix" %}
+{% endif %}
+
+{% include 'nav-drawer' %}
+{% include 'cart-drawer' %}
+
+<header class="site-header is-moved-by-drawer {{section.settings.header_position}} {{ colorFix }}" role="banner" data-section-id="{{ section.id }}"  data-section-type="header" data-position="{{section.settings.header_position}}">
+
+	<div class="wrapper {% if section.settings.top_bar_text != blank %}site-header-wrapper{% endif %}">
+		<div class="grid--full grid--table">
+		{% include 'site-logo' %}
+		{% include 'site-nav' %}
+		</div>
+	</div>
+  <div class="space-maker"></div>
+</header>
+
+{% if section.settings.show_search %}
+  {% include 'nav-search' %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "header-wrapper",
+  "settings": [
+    {
+      "type": "select",
+      "id": "header_position",
+      "label": "Position",
+      "default": "fixed",
+      "options": [
+        {
+          "value": "fixed",
+          "label": "Stick to top on scroll"
+        },
+        {
+          "value": "relative",
+          "label": "Hide on scroll"
+        }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Custom logo (Home page only)"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_not_home",
+      "label": "Custom logo"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": "Custom logo width (in pixels)",
+      "min":50,
+      "max":400,
+      "default": 100,
+      "step":5,
+      "unit":"px"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shop_name",
+      "label": "Show shop name"
+    },
+    {
+      "type": "header",
+      "content": "Search"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_search",
+      "label": "Show search",
+      "default": true
+    },
+    {
+      "type": "link_list",
+      "id": "menu_searches_list",
+      "label": "Search menu",
+      "info": "This menu won't show dropdown items"
+    },
+    {
+      "type": "header",
+      "content": "Menu"
+    },
+    {
+      "type": "link_list",
+      "id": "main-menu",
+      "label": "Link list",
+      "default": "main-menu"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Mega menu",
+      "type": "megamenu_image",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Menu item",
+          "info": "Attach Mega menu to this menu item."
+        },
+        {
+          "type": "select",
+          "id": "images_position",
+          "label": "Images position",
+          "default": "left",
+          "options": [
+            { "label": "Left", "value": "left" },
+            { "label": "Right", "value": "right"},
+            { "label": "Stacked", "value": "stacked"}
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image",
+          "info": "Recommended size: 500 x 800 px"
+        },
+        {
+          "type": "text",
+          "id": "title_1",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "link_1",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Image 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image",
+          "info": "Recommended size: 500 x 800 px"
+        },
+        {
+          "type": "text",
+          "id": "title_2",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "link_2",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Image 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Image",
+          "info": "Recommended size: 500 x 800 px"
+        },
+        {
+          "type": "text",
+          "id": "title_3",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "link_3",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Image 4"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_4",
+          "label": "Image",
+          "info": "Recommended size: 500 x 800 px"
+        },
+        {
+          "type": "text",
+          "id": "title_4",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "link_4",
+          "label": "Link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

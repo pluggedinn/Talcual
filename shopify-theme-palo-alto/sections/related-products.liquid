@@ -1,0 +1,58 @@
+<!-- Related Products-->
+<div data-section-type="related-products" data-section-id="{{ section.id }}">
+{% if section.settings.show_related_products == true %}
+	{% assign products_limit = settings.product_grid_columns | times:2 %}
+	<div class="grid--full wrapper related-products text-center">
+		{% assign collection_found = false %}
+		{% assign empty_collection_found = false %}
+
+		{% assign current_collection = collection %}
+		{% assign current_product = product %}
+
+		{% for collection in product.collections %}
+			{% assign current_collection_found = true %}
+			{% assign current_collection = collection %}
+		{% endfor %}
+
+		{% if current_collection_found %}
+			<h4>{{ section.settings.title }}</h4>
+
+			{% assign product_index = 1 %}
+			{% assign products_limit = products_limit | plus: 1 %}
+			{% for product in current_collection.products limit: products_limit %}
+				{% unless product_index == products_limit %}
+					{% if product.id == current_product.id %}
+						{% assign current_product_found = true %}
+					{% else %}
+						{% unless current_product_found == false %}
+						{% include 'product-grid-item' %}
+						{% endunless %}
+
+						{% assign product_index = product_index | plus: 1 %}
+					{% endif %}
+				{% endunless %}
+			{% endfor %}
+		{% endif %}
+	</div>
+{% endif %}
+</div>
+
+{% schema %}
+{
+	"name": "Related products",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "show_related_products",
+			"label": "Show related products",
+			"default": true
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title",
+			"default": "You Might Also Like"
+		}
+	]
+}
+{% endschema %} 
