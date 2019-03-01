@@ -97,6 +97,7 @@ export default {
 }
 .slick-slide {
   outline: none;
+  margin-top: 1px;
 }
 .slick-slide > div {
   visibility: hidden;
