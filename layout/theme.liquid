@@ -6,6 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <!-- Importing Vue and Vuex -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
+
     {% if settings.favicon != blank %}
       <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32'}}" type="image/png" />
     {% endif %}
@@ -48,13 +52,14 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <div id="PageContainer" class="is-moved-by-drawer">
-
+      <p>${ word }</p>
       <main class="main-content" role="main">
         {{ content_for_layout }}
       </main>
       {% section 'footer' %}
     
     </div>
+    {% include 'vue-app' %}
     {% include 'footer-javascript' %}
 </body>
 </html>
