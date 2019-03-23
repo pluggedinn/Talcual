@@ -59,6 +59,21 @@
     color: $colorBtnText !important;
   }
 }
+
+// Custom fonts
+@font-face {
+  font-family: 'SF Florencesans';
+  src: url(SFFlorencesans-Bold.ttf);
+}
+@font-face {
+  font-family: 'Dupe';
+  src: url(Dupe.ttf);
+}
+@font-face {
+  font-family: 'Deccan';
+  src: url(Deccan-medium.otf);
+}
+
 [data-icon]:before {
   font-family: "custom-icons" !important;
   content: attr(data-icon);
@@ -448,13 +463,21 @@ $baseFontSize: round(14px {{ settings.body_text_size }}); // Henseforth known as
 $font-weight-normal: {{ body_font.weight | default: 400 }};
 $font-weight-bold: {{ body_font_bold.weight | default: 700 }};
 
-$font-stack-heading: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+{% comment %} $font-stack-heading: {{ heading_font.family }}, {{ heading_font.fallback_families }};
 $font-weight-heading: {{ heading_font.weight | default: 400 }};
-$font-style-heading: {{ heading_font.style }};
+$font-style-heading: {{ heading_font.style }}; {% endcomment %}
 
-$font-stack-body: {{ body_font.family }}, {{ body_font.fallback_families }};
+$font-stack-heading: 'Dupe';
+$font-weight-heading: normal;
+$font-style-heading: normal;
+
+{% comment %} $font-stack-body: {{ body_font.family }}, {{ body_font.fallback_families }};
 $font-weight-body: {{ body_font.weight | default: 400 }};
-$font-style-body: {{ body_font.style }};
+$font-style-body: {{ body_font.style }}; {% endcomment %}
+
+$font-stack-body: 'Deccan';
+$font-weight-body: normal;
+$font-style-body: normal;
 
 $font-stack-button: {{ button_font.family }}, {{ button_font.fallback_families }};
 $font-weight-button: {{ button_font.weight | default: 400 }};

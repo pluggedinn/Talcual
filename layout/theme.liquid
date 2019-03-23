@@ -52,14 +52,13 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <div id="PageContainer" class="is-moved-by-drawer">
-      <p>${ word }</p>
       <main class="main-content" role="main">
         {{ content_for_layout }}
       </main>
       {% section 'footer' %}
     
     </div>
-    {% include 'vue-app' %}
+    {% comment %} {% include 'vue-app' %} {% endcomment %}
     {% include 'footer-javascript' %}
 </body>
 </html>
