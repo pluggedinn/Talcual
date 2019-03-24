@@ -1,0 +1,28 @@
+<script>
+const vuexLocal = new window.VuexPersistence.VuexPersistence({
+  storage: window.localStorage
+})
+
+const store = new Vuex.Store({
+  state: {
+    acceptedZips: [84102, 84103, 84105],
+    showModal: false,
+    inArea: null
+  },
+  mutations: {
+    SWITCH_MODAL(state) {
+      state.showModal = !state.showModal
+    },
+    SET_AREA(state, value) {
+      state.inArea = value
+    }
+  },
+  actions: {
+
+  },
+  getters: {
+
+  },
+  plugins: [vuexLocal.plugin]
+})
+</script>

@@ -6,9 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <!-- Importing Vue and Vuex -->
+    <!-- Importing Vue, Vuex and vuex-persist -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vuex"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuex-persist"></script>
 
     {% if settings.favicon != blank %}
       <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32'}}" type="image/png" />
@@ -51,14 +53,22 @@
     {% section 'popup' %}
     {% section 'announcement-bar' %}
     {% section 'header' %}
+
     <div id="PageContainer" class="is-moved-by-drawer">
+
       <main class="main-content" role="main">
+        <div id="vapp">
+          <vmodal></vmodal>
+          <button type="button" @click="$store.commit('SWITCH_MODAL')">Show modal</button>
+        </div>
         {{ content_for_layout }}
       </main>
       {% section 'footer' %}
     
     </div>
-    {% comment %} {% include 'vue-app' %} {% endcomment %}
+    {% include 'vuec-modal' %}
+    {% include 'vuex-state' %}
+    {% include 'vue-app' %}
     {% include 'footer-javascript' %}
 </body>
 </html>
