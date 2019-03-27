@@ -25,9 +25,9 @@
 >
   <div class ="overlay" style="background-color:{{ section.settings.hero_overlay_color }}; !important; opacity:{{ overlayOpacity }};"></div>
 
-  <div class="featured-image-section-inner text-center">
+  <div class="featured-image-section-inner text-left">
     {% if section.settings.heading != blank %}
-    <h1 class="slide-title main-heading {{ section.settings.text_color }}">{{ section.settings.heading | escape }}</h1>
+    <h1 class="slide-title main-heading {{ section.settings.text_color }}">{{ section.settings.heading }}</h1>
     {% endif %}
     {% if section.settings.subheading != blank %}
     <h2 class="slider-caption main-subheading {{ section.settings.text_color }}">{{ section.settings.subheading | escape }}</h2>

@@ -67,7 +67,7 @@
 }
 @font-face {
   font-family: 'Dupe';
-  src: url(Dupe.ttf);
+  src: url(LogoFontTC-Regular.otf);
 }
 @font-face {
   font-family: 'Deccan';
@@ -1527,7 +1527,7 @@ hr {
 /*================ Section Headers ================*/
 
 .main-heading {
-  @include size-header(48px);
+  @include size-header(40px);
   margin-bottom:10px;
   color: $colorTextHeading;
 
@@ -4393,6 +4393,13 @@ button:focus {outline:0;}
 
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .featured-image-section-inner {
+    width: 100%;
+    padding: 50px !important;
+  }
+}
 .custom-left-arrow, .custom-right-arrow {
     display: inline-block;
     color: {{settings.color_arrows}};
@@ -5470,8 +5477,9 @@ background-image: -ms-linear-gradient(right, $featuredContentOverlay, $featuredC
   z-index: 10;
   position: relative; 
   width: 100%;
-  padding-right: 12.5%;
-  padding-left: 12.5%;
+  /*padding-right: 12.5%;
+  padding-left: 12.5%;*/
+  padding-left: 550px;
 }
 
 .original-height{
@@ -6232,6 +6240,15 @@ background-image: -ms-linear-gradient(right, $featuredContentOverlay, $featuredC
 
   .text-center & {
     text-align: center;
+  }
+}
+
+.reduced {
+  p {
+    display: none;
+  }
+  p:nth-of-type(2) {
+    display: block;
   }
 }
 
@@ -10922,9 +10939,9 @@ body:not(.template-collection) .color-fix {
 }
 
 .icons-row__item {
-  width: 250px;
+  width: 300px;
   text-align: center;
-  padding: 0 50px;
+  padding: 0 10px;
   margin-bottom: 25px;
   @include at-query($max, $preLargest) {
     padding: 0 20px;

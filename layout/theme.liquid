@@ -3,7 +3,7 @@
   <!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
   <!--[if !IE]><!--><html class="not-ie no-js"><!--<![endif]-->
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <!-- Importing Vue, Vuex and vuex-persist -->
@@ -57,10 +57,11 @@
     <div id="PageContainer" class="is-moved-by-drawer">
 
       <main class="main-content" role="main">
-        <div id="vapp">
+        {% comment %} <div id="vapp">
           <vmodal></vmodal>
           <button type="button" @click="$store.commit('SWITCH_MODAL')">Show modal</button>
-        </div>
+        </div> {% endcomment %}
+        
         {{ content_for_layout }}
       </main>
       {% section 'footer' %}

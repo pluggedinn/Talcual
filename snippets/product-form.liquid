@@ -93,6 +93,13 @@ Check if the product is sold out and set a variable to be used below.
     </div>
 
     {% comment %}
+    Product Description and product tabs
+    {% endcomment %}
+    <div class="product-description rte {% if template == 'index' %}reduced{% endif %}" itemprop="description">
+        <p> {{ product.description }}</p>
+    </div>
+
+    {% comment %}
     Buttons
     {% endcomment %}
     {% if sold_out == true %}
@@ -108,13 +115,6 @@ Check if the product is sold out and set a variable to be used below.
     {% if settings.enable_payment_button %}
         {{ form | payment_button }}
     {% endif %}
-
-    {% comment %}
-    Product Description and product tabs
-    {% endcomment %}
-    <div class="product-description rte" itemprop="description">
-        <p> {{ product.description }}</p>
-    </div>
     
     {% if template != 'index' %}
     <div id="tabs-container" class="product-tabs">
